@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "parcel index.html",
     "clean": "rimraf dist .parcel-cache",
-    "test": "jest"
+    "test": "jest",
+    "verify": "jest --collectCoverage"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +32,9 @@
     ]
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "*.jsx"
+    ]
   }
 }
