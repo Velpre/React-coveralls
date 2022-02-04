@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "parcel index.html",
     "clean": "rimraf dist .parcel-cache",
-    "test": "jest",
+    "test": "jest --collectCoverage",
     "format": "prettier --write \"*.{jsx,js}\" \"__test__/**/*.{jsx,js}\"",
     "format:check": "prettier --check \"*.{jsx,js}\" \"__test__/**/*.{jsx,js}\"",
-    "verify": "npm run test --collectCoverage"
+    "verify": "npm run test"
   },
   "keywords": [],
   "author": "",
